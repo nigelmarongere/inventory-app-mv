@@ -1,6 +1,6 @@
 const express = require("express");
 const itemsRouter = express.Router();
-const { Item, Sauces } = require("../models/index");
+const { Item } = require("../models/index");
 const { data } = require('../seedData/seedData')
 
 itemsRouter.get('/', async (req, res) => {

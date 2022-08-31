@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const seed = require('./seedData/seed')
-const {itemRoutes, saucesRoutes} = require('./routes');
+const {itemRoutes} = require('./routes');
 
 const server = async (port) => {
     await seed() 
@@ -10,4 +10,4 @@ const server = async (port) => {
     });
 };
 
-server(3001);
+server(3050);

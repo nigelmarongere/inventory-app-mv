@@ -9,10 +9,9 @@ itemsRouter.get('/', async (req, res) => {
 })
 
 itemsRouter.get('/:id', async (req, res) => {
-    const items = await Item.findByPk(req.params.itemId);
+    const items = await Item.findByPk(req.params.id);
     if(!items) {
-        res.status(404);
-        next();
+        res.status(404).send({});
       } else {
         res.send(items);
       }

@@ -1,4 +1,4 @@
-items: [
+const Items = [
     {
        "title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
        "price":109.95,
@@ -140,3 +140,5 @@ items: [
        "image":"https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
     }
  ]
+
+ module.exports = Items;

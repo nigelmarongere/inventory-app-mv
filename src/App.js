@@ -1,19 +1,37 @@
+import React, { useEffect, useState } from "react";
 import './App.css';
-import SearchBar from './Searchbar';
-import Dashboarditems from './Dashboard';
-import Featuredproducts from './Featuredproducts';
-import ItemList from "./Itemrender";
-import Itemspage from "./Itemspage";
-import { BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
+// import SearchBar from './Searchbar';
+// import Dashboarditems from './Dashboarditems';
+// import Featuredproducts from './Featuredproducts';
+// import Itemspage from "./Itemspage";
+// import Sidebar from "./Sidebar";
+// import ItemList from "./components/ItemList" 
+import Dashboard from "./Dashboard";
+import Modal from "./Modals";
+
 
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Inventory app might go here</h1>
+  const [ items, setItems ] = useState([]);
+ 
 
+  useEffect(() => {
+    async function fetchItems() {
+      const resp = await fetch("http://localhost:3000/items");
+      const data = await resp.json();
+      setItems(data);
+    }
+    fetchItems();
+  })
+
+  return (
+    <div >
+      <Dashboard/>
+      <Modal/>
     </div>
   );
 };
+
+
 
 export default App;

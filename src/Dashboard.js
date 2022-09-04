@@ -1,19 +1,25 @@
-import React from 'react'
-import './App.css';
+import React from "react";
+import './App.css'
+import SearchBar from './Searchbar';
+import Dashboarditems from './Dashboarditems';
+import Featuredproducts from './Featuredproducts';
+import Sidebar from "./Sidebar";
 
-function Dashboarditems(){
+
+function Dashboard(){
     return (
-        <div className='Dashboard'>
-            <div className='Totalitems'>
-                <p>TotalItems</p>
-                <p>100</p>
-            </div>
-            <div className='Categories'>
-                <p>Categories</p>
-                <p>100</p>
-            </div>
+        <div className='Body'>
+          <div className='Main'>
+            <SearchBar />
+            <Dashboarditems />
+            <Featuredproducts />
+          </div>
+          <div className="App">
+            <Sidebar/>
+          </div>
         </div>
     );
 }
 
-export default Dashboarditems
+
+export default Dashboard

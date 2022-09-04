@@ -2,15 +2,17 @@
   width: auto;
   height: 100vh;
   display: flex;
-  background-color: rgb(243,242, 254);
+ /* background-color: rgb(236, 235, 241); */
 }
 
 .Main {
   margin-left: 170px;
+  height: 100vh;
 }
+
 .App {
-  background-color: #007755;
-  height: 100%;
+  background-color: #090c46;
+  height: 100vh;
   width: 160px;
   position: fixed;
   z-index: 1;
@@ -41,6 +43,7 @@
   height: 35px;
   width: 50%;
   border-radius: 10px;
+  background-color: #c0c2ed;
 }
 
 .Dashboard {
@@ -51,15 +54,13 @@
 }
 
 .Totalitems{
-  background-color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 5px 5px rgb(149, 146, 146);
+  background-color: #bcbeef;
   border-radius: 10px;
 }
 
 .Categories {
-  background-color: rgb(255, 255, 255);
+  background-color: #bcbeef;
   margin-left: 10px;
-  box-shadow: 5px 5px 5px 5px rgb(149, 146, 146);
   border-radius: 10px;
 }
 
@@ -68,13 +69,15 @@
 .Featuredproducts {
   padding-left: 1em;
   padding-top: 0.1em;
-  box-shadow: 5px 5px 5px 5px rgb(149, 146, 146);
   border-radius: 10px;
   margin-top: 50px;
-  background-color: rgb(255, 255, 255);
-  height: 50vh;
+  height: 100vh;
   width: 85vw;
   
+}
+
+.Featuredproducts h2{
+  text-align: center;
 }
 
 /* .Features{
@@ -84,9 +87,9 @@
 } */
  .Features {
   display: grid;
-  
-  grid-template-columns:.5fr .5fr .5fr .5fr .2fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
   color: white;
+  grid-gap: 10px;
   
   /* grid-auto-flow: column; */
 } 
@@ -94,21 +97,22 @@
 
 
 .Featureitems{
-  box-shadow: 5px 5px 5px 5px rgb(149, 146, 146);
-  background-color: #007755;
-  border-radius: 5px;
+  box-shadow: 5px 5px 5px #494a6e;
+  background-color: #4649a5;
+  border-radius: 50px;
   margin-left: 20px;
   text-align: center;
-  height: 20em;
   right: 5px;
   padding-top: 2em;
 }
 
 .Featureitems img{
-  max-width: 25%;
+  max-width: 50%;
+  border-radius: 50%;
 }
 
 .Itemtittle{
   font-weight: 700;
 }
+
 
